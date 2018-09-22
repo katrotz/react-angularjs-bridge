@@ -1,0 +1,8 @@
+<div class="angular-widget" data-ng-if="$ctrl.assetsLoaded">
+    <img data-ng-src="{{$ctrl.componentPath}}/assets/angularjs.svg" class="logo" alt="logo"/>
+    <h3 class="title">angular component</h3>
+    <button data-ng-click="$ctrl.toggleShowMessage()">Toggle message</button>
+    <div class="message" data-ng-show="$ctrl.showMessage">
+        <span data-ng-bind="$ctrl.message"></span>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+.app {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content {
+  width: 66%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: auto;
+}
+
+.aside {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: auto;
+  background: antiquewhite;
+  overflow-y: auto;
+}
+
+.react-section {
+  flex: 1;
+  text-align: center;
+  min-height: 150px;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.angular-section {
+  flex: 1;
+  text-align: center;
+  min-height: 150px;
+  background-color: steelblue;
+  padding: 20px;
+  color: #222;
+}
+
+.log-entry {
+  margin: 5px;
+}
+
+.log-entry .index {}
+
+.log-entry .prefix {
+  padding: 0 5px;
+  width: 60px;
+  display: inline-block;
+}
+
+.log-entry .prefix.react {
+  color: steelblue;
+}
+
+.log-entry .prefix.angular {
+  color: crimson;
+}
+
+.log-entry .message {}
+
+.title {
+  font-size: 1.2em;
+}
+
+button {
+  background: steelblue;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.logo {
+  animation: logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
