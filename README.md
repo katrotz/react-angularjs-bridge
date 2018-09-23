@@ -1,5 +1,5 @@
 # react-angularjs-bridge
-Example of react application hosting an angularJS component and their interoperability.
+Example of react application hosting an angularJS component and their interoperability. [Click here for a demo](https://react-angularjs-bridge.herokuapp.com/)
 
 <p align="center"> 
     <img src="https://katrotz.space/img/react-angularjs-bridge-image.jpg" alt="React AngularJS Bridge" width="200px"/>
