@@ -44,11 +44,11 @@ class ReactAngularBridge extends React.Component<IComponentProps, {}> {
       if (!this.$element) return this.onElementMissing();
 
       angular.module(this.props.appName)
-          .run(($rootScope: angular.IRootScopeService) => {
+          .run(['$rootScope', ($rootScope: angular.IRootScopeService) => {
               this.$rootScope = $rootScope;
 
               this.updateBindings();
-          });
+          }]);
 
       this.$shadowRoot = this.$element.attachShadow({ mode: 'closed' }); // TODO createShadowRoot for IE compatibility
 
